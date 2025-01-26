@@ -5,4 +5,4 @@ Installation (V1): \
 /os lb copyall kilgorezer+10 \
 /os blockprops 766 mb \
 /os blockprops 750 door \
-/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1/pipestoneplus.nas
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1
