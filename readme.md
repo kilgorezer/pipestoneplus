@@ -8,7 +8,7 @@ Installation (V1): \
 /osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1
 
 Installation (V2.0) \
-/os lb copyall kilgorezer+61 \
+/os lb copyall kilgorezer+12 \
 /os blockprops 766 mb \
 /os blockprops 750 door \
 /os blockprops 722 mb \
