@@ -4,6 +4,6 @@ To install the latest version, run these commands from your map:
 /os blockprops 766 mb \
 /os blockprops 750 door \
 /os blockprops 722 mb \
-/osus [script]
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1
 
 Then you should be good to go!
