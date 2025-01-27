@@ -16,3 +16,10 @@ Installation (V2.0) \
 /os blockprops 750 door \
 /os blockprops 722 mb \
 /osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.0.nas
+
+Installation (V2.1) \
+/os lb copyall kilgorezer+13 \
+/os blockprops 766 mb \
+/os blockprops 750 door \
+/os blockprops 722 mb \
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.1.nas
