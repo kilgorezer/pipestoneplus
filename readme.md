@@ -5,7 +5,8 @@ Installation (V1): \
 /os lb copyall kilgorezer+10 \
 /os blockprops 766 mb \
 /os blockprops 750 door \
-/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1.nas
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1.nas \
+/os physics 5
 
 Installation (V1.5 Intermediary) \
 /osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v1.5.nas
@@ -15,11 +16,13 @@ Installation (V2.0) \
 /os blockprops 766 mb \
 /os blockprops 750 door \
 /os blockprops 722 mb \
-/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.0.nas
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.0.nas \
+/os physics 5
 
 Installation (V2.1) \
 /os lb copyall kilgorezer+13 \
 /os blockprops 766 mb \
 /os blockprops 750 door \
 /os blockprops 722 mb \
-/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.1.nas
+/osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.1.nas \
+/os physics 5
