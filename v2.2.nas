@@ -310,6 +310,13 @@ quit
 	// cleanup
 	#Pipes:cleanup
 	resetdata packages Pipes.delay*
+	// Patch to prevent infinite loops
+	resetdata packages Pipes.line*
+	resetdata packages Pipes.gizmo*
+	resetdata packages Pipes.box*
+	set type
+	set message
+	// End of patch
 	if Pipes.threads|>|0 msg &eUsed {Pipes.threads} thread(s) and {actionCount} actions.
 	set Pipes.threads 0
 	set Pipes.inprogress false
