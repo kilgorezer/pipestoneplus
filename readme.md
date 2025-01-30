@@ -1,4 +1,4 @@
-Credit to bravelycowering on ClassiCube for making the original Pipestone.
+Credit to bravelycowering on ClassiCube for making the original Pipestone. You can view the official Pipestone tutorial by doing /g bravelycowering+9 on Not Awesome 2.
 This repository contains older versions of Pipestone+.
 
 Installation (V1): \
