@@ -27,7 +27,7 @@ Installation (V2.1) \
 /osus https://raw.githubusercontent.com/kilgorezer/pipestoneplus/refs/heads/main/v2.1.nas \
 /os physics 5
 
-Installation (V2.2) \
+Installation (V2.2.1) \
 /os lb copyall kilgorezer+14 \
 /os blockprops 766 mb \
 /os blockprops 750 door \
