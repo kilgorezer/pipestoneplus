@@ -165,7 +165,7 @@ quit
 
 #Pipes:version
 // (no arguments)
-	msg &fRunning Pipestone+ &a2.2&f, based on Pipes &a2.2
+	msg &fEjecutando Pipestone+ &a2.2&f, basado en Pipes &a2.2
 quit
 
 // runs the pipestone at the message block
@@ -324,11 +324,11 @@ terminate
 
 #Pipes:failsafe
 // (no arguments)
-	if Pipes.threads|=|0 msg &eWarning: actions exceeded 50k ({actionCount}), using threads to complete...
+	if Pipes.threads|=|0 msg &eAdvertencia: las acciones superaron los 50 000 ({actionCount}), utilizando subprocesos para completar...
 	setadd Pipes.threads 1
-	if Pipes.threads|=|5 msg &eWarning: actions exceeded 250k. Consider optimizing your pipestone.
-	if Pipes.threads|=|9 msg &eWarning: actions exceeded 450k. Pipestone+ highly recommends that you should optimize your pipestone.
-	if Pipes.threads|>=|10 msg &cError: actions exceeded 500k total (10 threads and {actionCount} actions), pipes cannot complete, aborting...
+	if Pipes.threads|=|5 msg &eAdvertencia: las acciones superaron las 250.000. Considere optimizar su pipestone.
+	if Pipes.threads|=|9 msg &eAdvertencia: las acciones superaron las 450.000. Pipestone+ recomienda encarecidamente optimizar su pipestone.
+	if Pipes.threads|>=|10 msg &cError: las acciones excedieron los 500 000 en total (10 subprocesos y {actionCount} acciones), los pipes no se pueden completar, se cancela...
 	if Pipes.threads|>=|10 jump #Pipes:cleanup
 	newthread {runArg1}
 terminate
@@ -501,13 +501,13 @@ jump #Pipes:messageblock
 
 // White
 #Pipes:prerun[36]
-	if id|=|36 msg &cWhite cannot be used as a switch
+	if id|=|36 msg &cWhite no se puede utilizar como interruptor.
 	if id|=|36 jump #Pipes:terminate
 quit
 
 // Sign
 #Pipes:prerun[171]
-	if id|=|171 msg &cSign cannot be used as a switch
+	if id|=|171 msg &cSign no se puede utilizar como interruptor.
 	if id|=|171 jump #Pipes:terminate
 quit
 
@@ -752,11 +752,11 @@ if Plus.id|=|742 jump #Plus:Jumps
 if Plus.id|=|741 jump #Plus:Hor
 if Plus.id|=|740 reach {Plus.PROPVALUE}
 if Plus.id|=|740 quit
-if Plus.id|=|737 msg %4Pipestone+ attempted to run an invalid configuration block. Aborting branch...
+if Plus.id|=|737 msg %4Pipestone+ intentó ejecutar un bloque de configuración no válido. Abortando rama...
 if Plus.id|=|737 quit
 if Plus.id|=|736 jump #Plus:Max
 if Plus.id|=|735 jump #Plus:Verbose
-msg %4Pipestone+ attempted to run an invalid configuration block. Aborting branch...
+msg %4Pipestone+ intentó ejecutar un bloque de configuración no válido. Abortando rama...
 quit
 
 // Only Power On
@@ -872,7 +872,7 @@ quit
 
 // Debugging Block
 #Plus:debug
-if Plus.VERBOSE msg %9Verbose: %fThe debugging block at {X} {Y} {Z} facing {dir} has been activated. The current number of actions ran is {actionCount} and the number of threads being used is {Pipes.threads}.
+if Plus.VERBOSE msg %9Detallado: %fEl bloque de depuración en {X} {Y} {Z} frente a {dir} se ha activado. El número actual de acciones ejecutadas es {actionCount} y el número de subprocesos que se utilizan es {Pipes.threads}.
 quit
 
 // Debugging Box (Lined Stone)
@@ -902,23 +902,23 @@ jump #Pipes:softbox
 
 #input
 if runArg1|=|"" msg %a/input plate
-if runArg1|=|"" msg %7Makes the next block you place and/or delete a pressure plate.
+if runArg1|=|"" msg %7Hace que el siguiente bloque que coloques y/o elimines sea una placa de presión.
 if runArg1|=|"" msg %a/input sign
-if runArg1|=|"" msg %7Makes the next block you place and/or delete a plaque that can activate pipestone.
+if runArg1|=|"" msg %7Hace que el siguiente bloque que coloques y/o elimines sea una placa que puede activar pipestone.
 if runArg1|=|"" msg %a/input config [type]
-if runArg1|=|"" msg %7Changes your held block to a configuration block.
-if runArg1|=|"" msg %7Lists avalible blocks if the type is missing or invalid.
-if runArg1|=|"" msg %a/input command [command] <args>
-if runArg1|=|"" msg %7Creates a command block that runs [command] with <args>
-if runArg1|=|"" msg %7For more commands, do %a/input pg2%7.
+if runArg1|=|"" msg %7Cambia su bloque retenido a un bloque de configuración.
+if runArg1|=|"" msg %7Enumera los bloques disponibles si el tipo falta o no es válido.
+if runArg1|=|"" msg %a/input command [comando] <argumentos>
+if runArg1|=|"" msg %7Crea un bloque de comando que ejecuta [comando] con <argumentos>
+if runArg1|=|"" msg %7Para obtener más comandos, ejecute %a/input pg2%7.
 if runArg1|=|"" msg %7Usable by: %uMember%7+
 if runArg1|=|"pg1" msg %a/input pg1
-if runArg1|=|"pg1" msg %7Are you an idiot or a genius? I cannot tell.
+if runArg1|=|"pg1" msg %7¿Eres un idiota o un genio? No puedo decirlo.
 if runArg1|=|"pg1" msg %7Usable by: %uMember%7+
 if runArg1|=|"pg2" msg %a/input text [message]
-if runArg1|=|"pg2" msg %7Creates a command block that displays [message] with a default color of %aGreen%7.
+if runArg1|=|"pg2" msg %7Crea un bloque de comando que muestra [mensaje] con un color predeterminado de %aVerde%7.
 if runArg1|=|"pg2" msg %a/input basics
-if runArg1|=|"pg2" msg %7Teleports the user to the pipes tutorial.
+if runArg1|=|"pg2" msg %7Teletransporta al usuario al tutorial de tuberías. Tenga en cuenta que el tutorial está en inglés.
 if runArg1|=|"pg2" msg %7Usable by: %uMember%7+
 if runArg1|=|"plate" cmd mb pressureplate /oss #run
 if runArg1|=|"plate" quit
@@ -963,8 +963,8 @@ if runArg1|=|"cpemsg" cmd hold 724
 if runArg1|=|"cpemsg" quit
 if runArg1|=|"verbose" cmd hold 735
 if runArg1|=|"verbose" quit
-msg %a/input config [type]
-msg %7Valid Values for [type]:
+msg %a/input config [tipo]
+msg %7Valores válidos para [tipo]:
 // msg %mthirdperson, fly, noclip, speed, push, respawn, %djumpheight, %9jumps, %dhorspeed, %9reach, %dmaxspeed, %7cpemsg
 msg %mthirdperson, fly, noclip, speed, push, respawn, %djumpheight, %9jumps, %dhorspeed, %9reach, %dmaxspeed, %mverbose
 quit
