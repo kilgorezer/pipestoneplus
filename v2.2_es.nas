@@ -493,6 +493,7 @@ quit
 
 // Print version number
 #onJoin
+msg Traducida parcialmente con el Traductor de Google
 jump #Pipes:version
 
 // Prevent every map ever from breaking
