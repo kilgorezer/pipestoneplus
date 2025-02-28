@@ -22,7 +22,7 @@ Installation (V2.0) \
 /os physics 5
 
 Installation (V2.1) \
-/os lb copyall kilgorezer+49 \
+/os lb copyall kilgorezer+13 \
 /os blockprops 608 mb \
 /os blockprops 722 mb \
 /os blockprops 766 mb \
