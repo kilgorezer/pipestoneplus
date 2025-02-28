@@ -493,6 +493,9 @@ quit
 
 // Print version number
 #onJoin
+setblockid startup 0 0 0
+// No Startup Message Mode: A spanish edition exclusive feature.
+if startup|=|715 quit
 msg Traducida parcialmente con el Traductor de Google
 jump #Pipes:version
 
