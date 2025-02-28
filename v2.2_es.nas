@@ -83,7 +83,7 @@ if dir|=|"Y-" setsub Plus.TY 1
 if dir|=|"Z+" setadd Plus.TZ 1
 if dir|=|"Z-" setsub Plus.TZ 1
 setblockid Plus.TEID {Plus.TX} {Plus.TY} {Plus.TZ}
-if Plus.TEID|>|767 msg &mWarning: %fThe teleporter at {X} {Y} {Z} sending a signal in the {dir} direction failed to find a reciever. Exiting branch...
+if Plus.TEID|>|767 msg &mAdvertencia: %fEl teletransportador en {X} {Y} {Z} que envió una señal en la dirección {dir} no pudo encontrar un receptor. Saliendo de la sucursal...
 if Plus.TEID|>|767 quit
 //msg %aCurrent ID (Debugging): %f{Plus.TEID}
 // End of while loop.
@@ -317,7 +317,7 @@ quit
 	set type
 	set message
 	// End of patch
-	if Pipes.threads|>|0 msg &eUsed {Pipes.threads} thread(s) and {actionCount} actions.
+	if Pipes.threads|>|0 msg &eSe utilizaron {Pipes.threads} subprocesos y acciones {actionCount}.
 	set Pipes.threads 0
 	set Pipes.inprogress false
 terminate
